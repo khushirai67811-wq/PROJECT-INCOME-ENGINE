@@ -1,0 +1,140 @@
+.app {
+  min-height: 100vh;
+  background: #0a0a0f;
+  color: #e2e8f0;
+  font-family: 'DM Mono', 'Fira Code', monospace;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+/* Cards */
+.card {
+  background: #111118;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+}
+
+/* Tags */
+.tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 99px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+/* Chips (category/stage selectors) */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  cursor: pointer;
+  transition: all 0.15s;
+  color: #94a3b8;
+  user-select: none;
+}
+
+.chip:hover {
+  background: #273449;
+  color: #e2e8f0;
+}
+
+.chip.selected {
+  background: #1d2d4a;
+  border-color: #3b82f6;
+  color: #60a5fa;
+}
+
+/* Form inputs */
+input,
+textarea {
+  background: #0d0d16;
+  border: 1px solid #1e293b;
+  color: #e2e8f0;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  width: 100%;
+  outline: none;
+  transition: border 0.15s;
+  padding: 10px 14px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3b82f6;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* Field labels */
+.field-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #64748b;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Section labels */
+.section-label {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+/* Loading spinner */
+.spinner {
+  width: 56px;
+  height: 56px;
+  border: 3px solid #1e293b;
+  border-top: 3px solid #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Animations */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.4s ease forwards;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .container {
+    padding: 20px 16px;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr !important;
+  }
+}
