@@ -81,16 +81,7 @@ project-income-engine/
 
 ---
 
-## ☁️ Deploy on Vercel (Free)
 
-```bash
-npm install -g vercel
-vercel
-```
-
-Follow the prompts — you'll get a public URL in under 60 seconds.
-
----
 
 ## 📸 Features
 
