@@ -102,7 +102,3 @@ Pull requests are welcome! For major changes, open an issue first.
 ## 📄 License
 
 MIT — free to use, modify, and distribute.
-
----
-
-Built with ❤️ using React + Anthropic Claude API
